@@ -1,0 +1,26 @@
+GET http://localhost:5000/notes
+
+###
+
+GET http://localhost:5000/getnote-by-id/1
+
+###
+POST http://localhost:5000/add-notes
+Content-Type: application/json
+
+{
+    "title": "Test Tugas 3",
+    "content": "Belajar"
+}
+
+###
+PUT http://localhost:5000/update-notes/2
+Content-Type: application/json
+
+{
+    "title": "Apalah hidup ini",
+    "content": "kemarin aku ke magelang"
+}
+
+###
+DELETE http://localhost:5000/delete-notes/3
